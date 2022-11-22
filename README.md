@@ -48,7 +48,7 @@ systemctl start site-alarm
 
 1. add the following line to `crontab -e` on your on-prem server to send a heartbeat once a minute
 ````
-* * * * * wget http://serverip/ 
+* * * * * wget http://serverip/ -O /dev/null
 ````
 
 ## General Security
